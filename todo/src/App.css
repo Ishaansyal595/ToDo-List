@@ -1,0 +1,170 @@
+body {
+  background: linear-gradient(black, grey, rgb(206, 204, 204));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 50vw;
+  margin: 50px auto;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  font-size: 40px;
+  width: 100%;
+  margin: 30px 0;
+  font-weight: 800;
+  text-align: center;
+  background-color: darkslateblue;
+  padding: 10px 0;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  gap: 5px;
+  align-items: center;
+  width: 85%;
+}
+
+.input input[type="text"] {
+  padding: 12px 20px;
+  width: 100%;
+  border: 1px solid black;
+  border-right: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  box-sizing: border-box;
+}
+
+.input select {
+  padding: 12px 10px;
+  font-weight: 600;
+  border: 1px solid black;
+  border-left: none;
+  border-right: none;
+  box-sizing: border-box;
+}
+
+.input button {
+  width: 100%;
+  padding: 13px 0;
+  background-color: darkslateblue;
+  border: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.input button:hover {
+  background-color: #4b0082;
+}
+
+.list-heading {
+  font-size: 40px;
+  width: 100%;
+  margin: 30px 0;
+  font-weight: 800;
+  text-align: center;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background-color: rgb(174, 174, 255);
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.listData {
+  font-size: 25px;
+  width: 80%;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listData > span {
+  font-size: 16px;
+  padding-top: 15px;
+  width: 10%;
+}
+
+span button {
+  padding: 14.5px 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: none;
+  background-color: darkslateblue;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+span button:hover {
+  background-color: #4b0082;
+}
+
+.removeAll-btn {
+  margin-top: 40px;
+  border: none;
+  background-color: darkslateblue;
+  color: white;
+  font-weight: 600;
+  padding: 14.5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.removeAll-btn:hover {
+  background-color: #4b0082;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 90vw;
+    padding: 20px;
+  }
+
+  .header,
+  .list-heading {
+    font-size: 32px;
+  }
+
+  .input {
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 2px;
+  }
+
+  .listData {
+    font-size: 20px;
+  }
+}
